@@ -16,7 +16,14 @@ spring:
         hibernate:
             dialect: org.hibernate.dialect.MySQL5Dialect
  
-  
+   
+logging:
+  file: Errorlog.log
+  level:
+    root: info
+    com.infoys.ars: info
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss,SSS} %5p [%t] %c [%M] - %m%n"
 
 
 
